@@ -1,5 +1,6 @@
 import { faker } from '@faker-js/faker';
 
+// Generate a unique user for each execution to avoid duplicate registrations.
 export function getUser() {
     const timestamp = Date.now();
     

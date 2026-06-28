@@ -128,19 +128,29 @@ Run all tests:
 ```bash
 npm test
 ```
+Run smoke tests:
 
+```bash
+npm run test:smoke
+```
 Run tests in headed mode:
 
 ```bash
 npm run test:headed
+
 ```
+----
+
+## Test Report
 
 View the HTML report:
 
 ```bash
 npm run report
 ```
+
 ---
+
 ## Test Scenario
 
 **User Registration and Login**
