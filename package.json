@@ -1,0 +1,24 @@
+{
+  "name": "parabank_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Megha49/ParaBank_Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Megha49/ParaBank_Automation/issues"
+  },
+  "homepage": "https://github.com/Megha49/ParaBank_Automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
+    "playwright-bdd": "^9.2.0"
+  }
+}
