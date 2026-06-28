@@ -36,7 +36,7 @@ export default defineConfig({
   ],
  use: {
     baseURL: 'https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC',
-    headless: false,
+    headless: process.env.CI ? true : false,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'on-first-retry',
