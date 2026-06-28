@@ -23,6 +23,8 @@ export default class RegistrationPage {
 
     async registerUser(user) {
 
+        //console.log("Filling username:", user.username);
+
         await this.firstName.fill(user.firstName);
         await this.lastName.fill(user.lastName);
         await this.address.fill(user.address);

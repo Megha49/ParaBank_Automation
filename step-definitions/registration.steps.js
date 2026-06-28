@@ -33,7 +33,7 @@ When('I click on the Register link', async () => {
 
 When('I register a new user with valid details', async () => {
     user = getUser();
-    // console.log('Generated User:', user);
+    //console.log('Generated User:', user);
     await registrationPage.registerUser(user);
 });
 

@@ -1,18 +1,18 @@
+import { faker } from '@faker-js/faker';
+
 export function getUser() {
-
+    const timestamp = Date.now();
+    
     return {
-
-        firstName: "John",
-        lastName: "Doe",
-        address: "123 Main St",
-        city: "Bangalore",
-        state: "Karnataka",
-        zipCode: "560076",
-        phone: "9876543210",
-        ssn: "123456789",
-        username: `user_${Date.now()}`,
-        password: "Password@123"
-
+        firstName: faker.person.firstName(),
+        lastName: faker.person.lastName(),
+        address: faker.location.streetAddress(),
+        city: faker.location.city(),
+        state: faker.location.state(),
+        zipCode: faker.location.zipCode(),
+        phone: faker.phone.number(),
+        ssn: faker.string.numeric(9),
+        username: `user_${timestamp}`,
+        password: 'Password@123',
     };
-
 }
