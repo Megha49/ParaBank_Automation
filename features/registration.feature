@@ -4,6 +4,7 @@ Feature: User Registration and Login to view balance
   I want to register and login
   So that I can access my account
 
+@smoke
   Scenario: Successfully register a new user and view the account balance
 
      Given I navigate to the ParaBank application
