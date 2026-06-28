@@ -1,3 +1,4 @@
+import { test, createBdd } from 'playwright-bdd';
 import { expect } from '@playwright/test';
 
 import LoginPage from '../pages/LoginPage.js';
@@ -6,6 +7,7 @@ import WelcomePage from '../pages/WelcomePage.js';
 import AccountsOverviewPage from '../pages/AccountsOverviewPage.js';
 
 import { getUser } from '../utils/testData.js';
+const { Given, When, Then } = createBdd(test);
 
 let loginPage;
 let registrationPage;

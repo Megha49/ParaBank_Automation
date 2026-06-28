@@ -16,7 +16,7 @@ export default class LoginPage {
 
     async navigate() {
 
-        await this.page.goto('https://parabank.parasoft.com/parabank/index.htm');
+        await this.page.goto('/');
 
     }
 

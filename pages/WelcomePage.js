@@ -16,7 +16,8 @@ class WelcomePage {
     }
 
     async verifyRegistrationSuccessMessage() {
-        await expect(this.successMessage).toBeVisible().toContainText(
+        await expect(this.successMessage).toBeVisible();
+        await expect(this.successMessage).toContainText(
             'Your account was created successfully. You are now logged in.'
         );
     }

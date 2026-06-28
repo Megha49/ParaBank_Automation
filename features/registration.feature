@@ -1,13 +1,15 @@
-Feature: User Registration and Login to view balance
+Feature: User Registration and Login
 
   As a new ParaBank user
   I want to register and login
   So that I can access my account
 
+  Background:
+    Given I navigate to the ParaBank application
+
 @smoke
   Scenario: Successfully register a new user and view the account balance
 
-     Given I navigate to the ParaBank application
     When I click on the Register link
     And I register a new user with valid details
 

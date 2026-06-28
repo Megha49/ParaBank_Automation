@@ -6,8 +6,8 @@ export default class AccountsOverviewPage {
 
         this.page = page;
 
-        this.accountsOverviewHeading =
-            page.getByText('Accounts Overview');
+        this.accountsOverview =
+            page.locator('#overviewAccountsApp');
 
 
         this.accountBalance =
@@ -17,13 +17,14 @@ export default class AccountsOverviewPage {
 
     async verifyAccountsOverviewPage() {
 
-        await expect(this.accountsOverviewHeading).toBeVisible();
+        await expect(this.accountsOverview).toBeVisible();
 
     }
 
     async verifyAccountBalanceDisplayed() {
 
-        await expect(this.accountBalance).toBeVisible().toContainText('$');
+        await expect(this.accountBalance).toBeVisible();
+        await expect(this.accountBalance).toContainText('$');
 
     }
 
